@@ -1,0 +1,11 @@
+flappybirdv0:
+  env_id: FlappyBird-v0
+  epsilon_init: 1
+  epsilon_min: 0.05 #minimum exploration rate
+  epsilon_decay: 0.9995 # decay rate for exploration
+  replay_memory_size: 100000 # size of the replay memory
+  mini_batch_size: 32 #no of sample to train 
+  network_sync_rate: 10 # at what step  to start forming  the target network with the main policy network
+  alpha: 0.001 
+  gamma: 0.99
+  reward_threshold: 1000
